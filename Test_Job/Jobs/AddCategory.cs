@@ -30,6 +30,7 @@ namespace Test_Job.Jobs
             //    throw new NotImplementedException();
             //}
             try
+
             {
                 con.Connect();
                  await Task.Run(()=> cmd.ExecuteNonQueryAsync("InsertData"));
